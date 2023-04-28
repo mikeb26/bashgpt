@@ -38,7 +38,7 @@ jobs:
             PATH=$PATH:$HOME/go/bin
             if [ "$CIRCLE_TAG" != "" ]
             then
-                ghr -name "Spot Shell ($CIRCLE_TAG)" $CIRCLE_TAG bashgpt
+                ghr -name "bashgpt ($CIRCLE_TAG)" $CIRCLE_TAG bashgpt
             else
                 echo "Not releasing untagged commit"
             fi
