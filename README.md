@@ -11,7 +11,7 @@ make
 
 ```bash
 mkdir -p $HOME/bin
-BASHGPT=$(curl -s https://api.github.com/repos/mikeb26/bashgpt/releases/latest | grep browser_download_url | cut -f2,3 -d: | tr -d \")
+BASHGPT=$(curl -s https://api.github.com/repos/mikeb26/bashgpt/releases/latest | grep browser_download_url | cut -f4 -d\")
 wget $BASHGPT
 chmod 755 bashgpt
 mv bashgpt $HOME/bin
