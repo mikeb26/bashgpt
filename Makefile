@@ -2,7 +2,7 @@ export GO111MODULE=on
 export GOFLAGS=-mod=vendor
 
 .PHONY: build
-build: cmd/bashgpt
+build: deps cmd/bashgpt
 
 cmd/bashgpt: FORCE
 	go build -o bashgpt cmd/bashgpt/*.go
