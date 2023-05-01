@@ -1,6 +1,8 @@
 # BashGPT
 Bash shell auto-completion via OpenAI's GPT API
 
+![Alt Text](./images/usage_examples.gif)
+
 ## Building
 
 ```bash
