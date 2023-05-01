@@ -4,7 +4,7 @@ export GOFLAGS=-mod=vendor
 .PHONY: build
 build: cmd/bashgpt
 
-cmd/bashgpt: FORCE
+cmd/bashgpt: vendor FORCE
 	go build -o bashgpt cmd/bashgpt/*.go
 
 vendor: go.mod
