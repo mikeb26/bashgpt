@@ -70,6 +70,11 @@ func configMain(args []string) error {
 		return fmt.Errorf("Could not write OpenAI API key file %v: %w", keyPath, err)
 	}
 
+	err = checkLatestAutocompleteScript()
+	if err != nil {
+		return fmt.Errorf("Could not write autocomplete script: %w", keyPath, err)
+	}
+
 	fmt.Printf("Add the following to your .bashrc or equivalent:\n  if [ -f ~/.config/%v/%v ]; then\n      . ~/.config/%v/%v\n  fi\n",
 		CommandName, AutocompleteScript, CommandName, AutocompleteScript)
 
