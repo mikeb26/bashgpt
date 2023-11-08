@@ -5,7 +5,7 @@ export GOFLAGS=-mod=vendor
 build: cmd/bashgpt
 
 cmd/bashgpt: vendor FORCE
-	go build -o bashgpt cmd/bashgpt/*.go
+	CGO_ENABLED=0 go build -o bashgpt cmd/bashgpt/*.go
 
 vendor: go.mod
 	go mod download
