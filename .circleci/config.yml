@@ -35,6 +35,7 @@ jobs:
       - run:
           name: Github release
           command: |
+            go install github.com/tcnksm/ghr@latest
             PATH=$PATH:$HOME/go/bin
             if [ "$CIRCLE_TAG" != "" ]
             then
