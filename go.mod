@@ -1,5 +1,5 @@
 module github.com/mikeb26/bashgpt
 
-go 1.22.0
+go 1.22.3
 
-require github.com/sashabaranov/go-openai v1.20.2
+require github.com/sashabaranov/go-openai v1.24.1
