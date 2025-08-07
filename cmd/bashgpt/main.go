@@ -338,7 +338,7 @@ func shMain(args []string) error {
 	resp, err := client.CreateChatCompletion(
 		context.Background(),
 		openai.ChatCompletionRequest{
-			Model:    openai.O4Mini,
+			Model:    "gpt-5-mini", // openai.GPT5* not yet defined
 			Messages: dialogue,
 		},
 	)
