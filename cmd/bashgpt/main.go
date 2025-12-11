@@ -339,7 +339,7 @@ func shMain(args []string) error {
 		context.Background(),
 		openai.ChatCompletionRequest{
 			ReasoningEffort: "none",
-			Model:           "gpt-5.1", // openai.GPT51* not yet defined
+			Model:           "gpt-5.2", // openai.GPT52* not yet defined
 			Messages:        dialogue,
 		},
 	)
