@@ -338,8 +338,8 @@ func shMain(args []string) error {
 	resp, err := client.CreateChatCompletion(
 		context.Background(),
 		openai.ChatCompletionRequest{
-			ReasoningEffort: "none",
-			Model:           "gpt-5.2", // openai.GPT52* not yet defined
+			ReasoningEffort: "medium",
+			Model:           "gpt-5.2-chat-latest",
 			Messages:        dialogue,
 		},
 	)
