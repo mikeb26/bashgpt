@@ -338,9 +338,8 @@ func shMain(args []string) error {
 	resp, err := client.CreateChatCompletion(
 		context.Background(),
 		openai.ChatCompletionRequest{
-			ReasoningEffort: "medium",
-			Model:           "gpt-5.2-chat-latest",
-			Messages:        dialogue,
+			Model:    "gpt-5.4-nano",
+			Messages: dialogue,
 		},
 	)
 	if err != nil {
