@@ -338,7 +338,7 @@ func shMain(args []string) error {
 	resp, err := client.CreateChatCompletion(
 		context.Background(),
 		openai.ChatCompletionRequest{
-			Model:    "gpt-5.4-nano",
+			Model:    "gpt-5.6-luna",
 			Messages: dialogue,
 		},
 	)
